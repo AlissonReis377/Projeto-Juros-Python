@@ -29,10 +29,11 @@ if resposta == 'C':
     print(f'O montante final composto será de: R${valor_final_composto:.02f} ')
     print(f'O Juros do rendimento foram de: R${valor_final_composto - capital:.02f} ')
 
-else:
+if resposta == 'S':
     valor_final_simples = simples(capital,juros,tempo)
-    print(f'O montante final simples será de: R${valor_final_simples:.02f} ')
-
+    print(f'O montante final simples será de: R${(valor_final_simples + capital):.02f} ')
+else:
+    print('Opção inválida! Execute o programa novamente e escolha C ou S.')
 
 print('Obrigado por usar nosso sistema! :D')
 input('pressione ENTER para sair...')
