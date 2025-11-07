@@ -29,7 +29,7 @@ if resposta == 'C':
     print(f'O montante final composto será de: R${valor_final_composto:.02f} ')
     print(f'O Juros do rendimento foram de: R${valor_final_composto - capital:.02f} ')
 
-if resposta == 'S':
+elif resposta == 'S':
     valor_final_simples = simples(capital,juros,tempo)
     print(f'O montante final simples será de: R${(valor_final_simples + capital):.02f} ')
 else:
